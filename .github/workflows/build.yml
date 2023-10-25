@@ -8,7 +8,7 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     environment:
-      name: Production
+      name: prod-plan
     env:
       TECTON_API_KEY: ${{ secrets.PROD_API_KEY }}
       API_SERVICE: ${{ vars.API_SERVICE }}
@@ -37,7 +37,7 @@ jobs:
     needs: [plan]
     runs-on: ubuntu-latest
     environment: 
-        name: Production
+        name: prod-deploy
     env:
         TECTON_API_KEY: ${{ secrets.PROD_API_KEY }}
         API_SERVICE: ${{ vars.API_SERVICE }}
