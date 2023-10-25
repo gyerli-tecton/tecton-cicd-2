@@ -1,7 +1,7 @@
 name: Tecton CICD - plan/apply to dev
 
 on:
-  push:
+  pull_request:
     branches: [ main ]
 
 jobs:
