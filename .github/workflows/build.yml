@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: print dev plan variables
+      - name: print prod plan variables
         run: |
            echo Running plan on main push
            echo "dev API_SERVICE variable => $API_SERVICE"
@@ -45,7 +45,7 @@ jobs:
     steps:
         - uses: actions/checkout@v3
 
-        - name: print dev apply variables
+        - name: print prod apply variables
           run: |
             echo Running apply on main push
             echo "dev API_SERVICE variable => $API_SERVICE"
