@@ -1,4 +1,4 @@
-name: Tecton CICD - plan/apply to dev
+name: Tecton CICD - plan/apply
 
 on:
   pull_request:
