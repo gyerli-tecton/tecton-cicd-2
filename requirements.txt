@@ -1,1 +1,1 @@
-tecton[pyspark]~=0.7.7
+tecton~=0.7.7
